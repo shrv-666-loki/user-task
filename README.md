@@ -35,14 +35,17 @@ $ npm install
 ## Running the app
 
 ```bash
+# Install PM2 globally
+$ npm i -g pm2
+
 # development
-$ npm run start
+$ pm2 start ecosystem.config.js --env development
 
 # watch mode
 $ npm run start:dev
 
 # production mode
-$ npm run start:prod
+$ pm2 start ecosystem.config.js --env production
 ```
 
 ## Test
